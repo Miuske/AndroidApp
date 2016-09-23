@@ -1,52 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context="miasilja.androidapp.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:id="@+id/pelit_lista"
+        android:layout_below="@+id/tervetuloa_nimi" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <!--include layout="@layout/content_main" /--> <!--Lisää fragmentin-->
-
-    <!--android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" /-->
-
-    <FrameLayout
+    <TextView
+        android:text="Hei "
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <Button android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello, I am a Button"
-            android:layout_gravity="center" />
-
-        <TextView android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello, I am a TextView"
-            android:layout_gravity="center_horizontal|bottom" />
-    </FrameLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/tervetuloa_nimi"
+        android:textSize="36sp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal" />
 
 
-</android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
